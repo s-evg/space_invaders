@@ -28,12 +28,10 @@ class Scores():
         """Количество жизней"""
         self.lifes = Group()
         for gun_number in range(self.stats.guns_life):
-            # print(gun_number)
             life = Life(self.screen)
             life.rect.x = life.rect.width * gun_number + 10
             life.rect.y = 18
             self.lifes.add(life)
-            print(self.lifes)
 
     def image_high_score(self):
         """Преобразует рекорд в графическое изображение"""
